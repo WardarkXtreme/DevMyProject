@@ -12,6 +12,7 @@
     .name-title-header{
         @include fontOne;
         color: #4b565e;
+        margin-bottom: 0px;
     }
     .text-head{
         display: flex;
@@ -19,6 +20,7 @@
         font-size: 2.2rem;
         text-align: center;
         margin: 0px;
+        margin-bottom: 30px;
         color: white;
     }
 }
@@ -28,6 +30,9 @@
         .text-head{
             font-size: 1.4em;
             width: 90%;
+        }
+        .name-title-header{
+            margin-bottom: 0px;
         }
     }
 }
@@ -40,6 +45,7 @@
         .name-title-header{
             font-size: 2rem;
             margin: 30px 0;
+            margin-bottom: 0px;
         }
         .text-head{
             font-size: 1rem;

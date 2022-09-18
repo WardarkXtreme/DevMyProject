@@ -179,6 +179,7 @@ h2 {
   font-size: 4rem;
   margin: 40px 0;
   color: #4b565e;
+  margin-bottom: 0px;
 }
 .group-header .text-head {
   display: flex;
@@ -186,6 +187,7 @@ h2 {
   font-size: 2.2rem;
   text-align: center;
   margin: 0px;
+  margin-bottom: 30px;
   color: white;
 }
 
@@ -193,6 +195,9 @@ h2 {
   .group-header .text-head {
     font-size: 1.4em;
     width: 90%;
+  }
+  .group-header .name-title-header {
+    margin-bottom: 0px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -203,6 +208,7 @@ h2 {
   .group-header .name-title-header {
     font-size: 2rem;
     margin: 30px 0;
+    margin-bottom: 0px;
   }
   .group-header .text-head {
     font-size: 1rem;
@@ -305,6 +311,7 @@ h2 {
 @media screen and (max-width: 500px) {
   .group-service .card-service {
     width: 100%;
+    border: none;
   }
   .group-service .card-service .service {
     font-size: 1.2rem;
