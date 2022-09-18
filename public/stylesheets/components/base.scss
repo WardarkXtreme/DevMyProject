@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Jost&family=Kodchasan:ital,wght@1,600&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #021118;
+    overflow: hidden;
+}
+h2{
+    font-family: 'Kodchasan', sans-serif;
+    color: #657076;
+    font-size: 2.7rem;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+@mixin fontOne{
+    font-family: 'Abhaya Libre', serif;
+    font-size: 4rem;
+    margin: 40px 0;
+}
+@mixin fontTwo{
+    font-family: 'Jost', sans-serif;
+}
+@mixin center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin center-around {
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+}
+@mixin around-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin left-center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+@mixin column-center-around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin column-center-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+    h2{
+        font-size: 1.9rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    h2{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,21 @@
+footer{
+    background: rgba(0, 0, 0, 0.76);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    padding-bottom: 20px;
+    .logo-footer{
+        display: flex;
+        width: 10rem;
+        margin: 20px 0;
+    }
+    .string-footer{
+        @include fontTwo;
+        font-size: 1.4em;
+        color: white;
+        margin: 0px;
+    }
+}

@@ -1,0 +1,64 @@
+@keyframes loading {
+  0% {
+    top: -100vh;
+  }
+
+  46% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    top: 0;
+    transform: scale(1.2, 0.8);
+  }
+
+  56% {
+    top: -15vh;
+    transform: scale(1, 1);
+  }
+
+  70% {
+    top: 0;
+    transform: scale(1.2, 0.8);
+  }
+
+  76% {
+    top: -15vh;
+    transform: scale(1, 1);
+  }
+
+  90% {
+    top: 0;
+    transform: scale(1.1, 0.9);
+  }
+
+  96% {
+    top: -5vh;
+    transform: scale(1, 1);
+  }
+
+  100% {
+    top: 0;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes deconstructed1 {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes deconstructed2 {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

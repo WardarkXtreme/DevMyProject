@@ -1,0 +1,112 @@
+.group-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .card-service{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        width: 80%;
+        max-width: 1300px;
+        min-width: 300px;
+        background: white;
+        border-radius: 2em;
+        margin-bottom: 60px;
+        background: rgba( 255, 253, 253, 0.3 );
+        box-shadow: 0 8px 32px 0 rgb(0 0 0 / 59%);
+        backdrop-filter: contrast(0.5);
+        -webkit-backdrop-filter: contrast(0.5);
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        z-index: -5;
+        .service{
+            @include fontTwo;
+            font-size: 2rem;
+            padding: 1rem;
+            margin: 0;
+            overflow: hidden;
+        }
+        .string-description{
+            @include fontTwo;
+            font-size: 1.6rem;
+            text-align: justify;
+            padding: 0 1rem;
+            margin: 0;
+        }
+        .container-btn{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            .btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 18rem;
+                height: 3rem;
+                background: #4F69AD;
+                color: white;
+                font-size: 2rem;
+                border-radius: 2em;
+            }
+        }
+    }
+}
+.text{
+    display: flex;
+    max-width: 1300px;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0px;
+    color: white;
+}
+.service::before{
+    content: "";
+    border-bottom: #4F69AD solid;
+    position: absolute;
+    top: 4rem;
+    width: 5%;
+    height: 2px;
+    transform: scaleY(1.5);
+    transition: transform 2s ease-in-out;
+}
+@media screen and (max-width: 1300px) {
+    .group-service{
+        .card-service{
+            width: 100%;
+            .service{
+                font-size: 1.5rem;
+            }
+            .string-description{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .text{
+        width: 90%;
+        font-size: 1.4rem;
+    }
+    .service::before{
+        top: 3rem;       
+    }
+}
+@media screen and (max-width: 500px) {
+    .group-service{
+        .card-service{
+            width: 100%;
+            .service{
+                font-size: 1.2rem;
+            }
+            .string-description{
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .text{
+        width: 90%;
+        font-size: 1.4rem;
+    }
+    .service::before{
+        top: 3rem;       
+    }
+}

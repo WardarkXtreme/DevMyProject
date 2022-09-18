@@ -1,0 +1,1 @@
+import('./composant/Animated.js');

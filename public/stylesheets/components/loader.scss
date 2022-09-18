@@ -1,0 +1,70 @@
+.container-group__loader {
+    background: #021118;
+    @include column-center-center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: opacity 1.5s ease-in-out, visibility 1.5s ease-in-out;
+    .container {
+        width: 60vw;
+        height: 60vw;
+        max-height: 400px;
+        max-width: 400px;
+        border-radius: 100%;
+        background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgb(220, 220, 220) 40%, rgb(170, 170, 170) 98%, rgb(10, 10, 10) 100%);
+        position: relative;
+        top: 0vh;
+        animation: loading 5s cubic-bezier(0.81, -0.2, 0.79, 0.13) forwards;
+        .loader {
+            .contain-logo__loader {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                .logo-loader {
+                    display: flex;
+                    width: 75%;
+                }
+            }
+        }
+        .loader:before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            border-bottom: 0 solid #ffffff05;
+            box-shadow: 
+            0 -10px 20px 10px #ffffff40 inset, 0 -5px 9px 10px #ffffff50 inset, 0 -2px 5px #ffffff80 inset, 0 -3px 2px #ffffffbb inset, 0 2px 0px #ffffff, 0 2px 3px #ffffff, 0 5px 5px #ffffff90, 0 10px 9px #ffffff60, 0 10px 20px 10px #ffffff40;
+            filter: blur(3px);
+            animation: 2s rotate linear infinite;
+        }
+
+    }
+    .name-title{
+        @include center-center;
+        width: 100%;
+        margin-top: 50px;
+        font-size: 4rem;
+        background: #657076;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.45));
+        animation: deconstructed2 2s linear forwards;
+    }
+    .deconstructed{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 20px;
+        animation: deconstructed1 2s linear forwards;
+    }
+}
+.container-group__loader.dissolve{
+    opacity: 0;
+    visibility: hidden;
+}
