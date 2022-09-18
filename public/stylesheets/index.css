@@ -2,13 +2,13 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: #021118;
+  background: #F2F2F2;
   overflow: hidden;
 }
 
 h2 {
   font-family: "Kodchasan", sans-serif;
-  color: #657076;
+  color: #272D40;
   font-size: 2.7rem;
 }
 
@@ -178,7 +178,7 @@ h2 {
   font-family: "Abhaya Libre", serif;
   font-size: 4rem;
   margin: 40px 0;
-  color: #4b565e;
+  color: #272D40;
   margin-bottom: 0px;
 }
 .group-header .text-head {
@@ -188,7 +188,7 @@ h2 {
   text-align: center;
   margin: 0px;
   margin-bottom: 30px;
-  color: white;
+  color: #656773;
 }
 
 @media screen and (max-width: 1300px) {
@@ -228,10 +228,9 @@ h2 {
   width: 80%;
   max-width: 1300px;
   min-width: 300px;
-  background: white;
   border-radius: 2em;
   margin-bottom: 60px;
-  background: rgba(255, 253, 253, 0.3);
+  background: #BFAF8F;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.59);
   backdrop-filter: contrast(0.5);
   -webkit-backdrop-filter: contrast(0.5);
@@ -264,10 +263,11 @@ h2 {
   align-items: center;
   width: 18rem;
   height: 3rem;
-  background: #4F69AD;
-  color: white;
+  background: #272D40;
+  color: #F2F2F2;
   font-size: 2rem;
   border-radius: 2em;
+  padding: 10px;
 }
 
 .text {
@@ -276,7 +276,7 @@ h2 {
   font-size: 2.2rem;
   text-align: center;
   margin: 0px;
-  color: white;
+  color: #656773;
 }
 
 .service::before {
@@ -315,16 +315,18 @@ h2 {
   }
   .group-service .card-service .service {
     font-size: 1.2rem;
+    color: white;
   }
   .group-service .card-service .string-description {
     font-size: 1.1rem;
   }
   .text {
     width: 90%;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   .service::before {
-    top: 3rem;
+    top: 0;
+    width: 0;
   }
 }
 footer {

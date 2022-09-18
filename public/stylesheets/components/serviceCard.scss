@@ -10,10 +10,9 @@
         width: 80%;
         max-width: 1300px;
         min-width: 300px;
-        background: white;
         border-radius: 2em;
         margin-bottom: 60px;
-        background: rgba( 255, 253, 253, 0.3 );
+        background: #BFAF8F;
         box-shadow: 0 8px 32px 0 rgb(0 0 0 / 59%);
         backdrop-filter: contrast(0.5);
         -webkit-backdrop-filter: contrast(0.5);
@@ -44,10 +43,11 @@
                 align-items: center;
                 width: 18rem;
                 height: 3rem;
-                background: #4F69AD;
-                color: white;
+                background: #272D40;
+                color: #F2F2F2;
                 font-size: 2rem;
                 border-radius: 2em;
+                padding: 10px;
             }
         }
     }
@@ -58,7 +58,7 @@
     font-size: 2.2rem;
     text-align: center;
     margin: 0px;
-    color: white;
+    color: #656773;
 }
 .service::before{
     content: "";
@@ -97,6 +97,7 @@
             border: none;
             .service{
                 font-size: 1.2rem;
+                color: white;
             }
             .string-description{
                 font-size: 1.1rem;
@@ -105,9 +106,10 @@
     }
     .text{
         width: 90%;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
     .service::before{
-        top: 3rem;       
+        top: 0;
+        width: 0;       
     }
 }
