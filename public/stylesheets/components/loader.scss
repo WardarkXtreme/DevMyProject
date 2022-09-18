@@ -68,3 +68,14 @@
     opacity: 0;
     visibility: hidden;
 }
+
+@media screen and (max-width: 500px) {
+    .container-group__loader{
+        .name-title{
+            font-size: 2.3rem;
+        }
+        .deconstructed{
+            font-size: 1.2rem;
+        }
+    }
+}
