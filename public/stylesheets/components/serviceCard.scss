@@ -17,7 +17,7 @@
         backdrop-filter: contrast(0.5);
         -webkit-backdrop-filter: contrast(0.5);
         border: 1px solid rgba( 255, 255, 255, 0.18 );
-        z-index: -5;
+        z-index: 0;
         .service{
             @include fontTwo;
             font-size: 2rem;
@@ -48,6 +48,17 @@
                 font-size: 2rem;
                 border-radius: 2em;
                 padding: 10px;
+                z-index: 100;
+                cursor: pointer;
+                box-shadow: 3px 5px 5px 1px rgba(0, 0, 0, 0.8);
+                &:hover{
+                    box-shadow: 4px 6px 6px 1px rgba(0, 0, 0, 0.5);
+                    transform: scale(1.1)
+                }
+                &:active{
+                    transform: scale(0.9);
+                    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.4);
+                }
             }
         }
     }

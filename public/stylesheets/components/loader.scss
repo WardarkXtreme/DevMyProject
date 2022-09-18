@@ -6,6 +6,7 @@
     width: 100%;
     overflow: hidden;
     transition: opacity 1.5s ease-in-out, visibility 1.5s ease-in-out;
+    z-index: 150;
     .container {
         width: 60vw;
         height: 60vw;
