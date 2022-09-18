@@ -9,7 +9,7 @@ const btn = document.querySelectorAll('.btn')
 btn.forEach(btn => {
     btn.addEventListener('click', (e)=>{
         window.sessionStorage.setItem("service", `${e.target.id}`)
-        document.location.href = '../public/contact.html';
+        document.location.href = 'contact.html';
     })
 });
 
