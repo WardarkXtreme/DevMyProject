@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Jost&family=Kodchasan:ital,wght@1,600&display=swap");
+.body {
+  overflow: hidden;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   background: #F2F2F2;
-  overflow: hidden;
 }
 
 h2 {
   font-family: "Kodchasan", sans-serif;
-  color: #272D40;
+  color: #414c6d;
   font-size: 2.7rem;
 }
 
@@ -179,7 +182,7 @@ h2 {
   font-family: "Abhaya Libre", serif;
   font-size: 4rem;
   margin: 40px 0;
-  color: #272D40;
+  color: #414c6d;
   margin-bottom: 0px;
 }
 .group-header .text-head {
@@ -189,7 +192,7 @@ h2 {
   text-align: center;
   margin: 0px;
   margin-bottom: 30px;
-  color: #656773;
+  color: black;
 }
 
 @media screen and (max-width: 1300px) {
@@ -244,6 +247,7 @@ h2 {
   padding: 1rem;
   margin: 0;
   overflow: hidden;
+  color: #414c6d;
 }
 .group-service .card-service .string-description {
   font-family: "Jost", sans-serif;
@@ -288,12 +292,12 @@ h2 {
   font-size: 2.2rem;
   text-align: center;
   margin: 0px;
-  color: #656773;
+  color: black;
 }
 
 .service::before {
   content: "";
-  border-bottom: #4F69AD solid;
+  border-bottom: #414c6d solid;
   position: absolute;
   top: 4rem;
   width: 5%;
@@ -363,11 +367,147 @@ footer .string-footer {
   margin: 0px;
 }
 
-@media screen and (max-width: 1300px) {
-  .text-head {
-    font-size: 1.5em;
-    width: 90%;
-  }
+.footer {
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  bottom: 0;
+}
+
+.contain-page_form {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+.contain-page_form .group-header__form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-height: 54rem;
+  justify-content: center;
+  align-items: center;
+}
+.contain-page_form .group-header__form .logo-header {
+  display: flex;
+  width: 20rem;
+}
+.contain-page_form .group-header__form .name-title-form {
+  font-size: 4rem;
+  color: #414c6d;
+  margin-bottom: 0;
+}
+.contain-page_form .group-header__form .text-form {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+.contain-page_form .main-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.contain-page_form .main-form .card-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  height: fit-content;
+  background: #BFAF8F;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.59);
+  border: none;
+  border-radius: 3rem;
+}
+.contain-page_form .main-form .card-form .goup-input {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 15px 0;
+}
+.contain-page_form .main-form .card-form .goup-input .style-input__file {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background: white;
+  box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
+}
+.contain-page_form .main-form .card-form .goup-input .style-input__file .preview-all__file {
+  max-height: 169px;
+  overflow-x: auto;
+}
+.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn .btn-file, .contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn .fastyle {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  background: #414c6d;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn .btn-file {
+  font-size: 3rem;
+}
+.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn .fastyle {
+  font-size: 1.2rem;
+  order: 3;
+}
+.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn .definition {
+  font-size: 1.2rem;
+}
+.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn #file {
+  display: none;
+}
+.contain-page_form .main-form .card-form .goup-input .style-input__file .all-file__preview {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2.5px;
+  margin-bottom: 10px;
+}
+.contain-page_form .main-form .card-form .goup-input .style-input__file .all-file__preview .picture-preview {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+}
+.contain-page_form .main-form .card-form .goup-input .style-input__file .all-file__preview .name-preview {
+  font-size: 1.3rem;
+}
+.contain-page_form .main-form .card-form .goup-input .obligation {
+  text-align: end;
+  margin: 3px 0;
+}
+
+input, textarea {
+  height: 40px;
+  font-size: 1.2rem;
+  box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
+}
+
+label {
+  font-size: 1.2rem;
+  color: #414c6d;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+  overflow-y: auto;
 }
 
 /*# sourceMappingURL=index.css.map */

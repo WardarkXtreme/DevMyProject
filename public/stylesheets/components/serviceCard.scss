@@ -24,6 +24,7 @@
             padding: 1rem;
             margin: 0;
             overflow: hidden;
+            color: #414c6d;
         }
         .string-description{
             @include fontTwo;
@@ -69,11 +70,11 @@
     font-size: 2.2rem;
     text-align: center;
     margin: 0px;
-    color: #656773;
+    color: black;
 }
 .service::before{
     content: "";
-    border-bottom: #4F69AD solid;
+    border-bottom: #414c6d solid;
     position: absolute;
     top: 4rem;
     width: 5%;

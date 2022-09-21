@@ -5,9 +5,4 @@
 @import "./components/serviceCard.scss";
 @import "./components/footer.scss";
 @import "./components/responsive.scss";
-@media screen and (max-width: 1300px) {
-    .text-head{
-        font-size: 1.5em;
-        width: 90%;
-    }
-}
+@import "./components/pageForm.scss";

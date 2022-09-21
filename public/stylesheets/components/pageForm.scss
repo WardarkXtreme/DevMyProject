@@ -1,0 +1,132 @@
+.contain-page_form{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    overflow: auto;
+    .group-header__form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        max-height: 54rem;
+        justify-content: center;
+        align-items: center;
+        .logo-header{
+            display: flex;
+            width: 20rem;
+        }
+        .name-title-form{
+            font-size: 4rem;
+            color: #414c6d;
+            margin-bottom: 0;
+        }
+        .text-form{
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+    }
+    .main-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        .card-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 85%;
+            height: fit-content;
+            background: #BFAF8F;
+            box-shadow: 0 8px 32px 0 rgb(0 0 0 / 59%);
+            border: none;
+            border-radius: 3rem;
+            .goup-input{
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                margin: 15px 0;
+                .style-input__file{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    height: auto;
+                    background: white;
+                    box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
+                    .preview-all__file{
+                        max-height: 169px;
+                        overflow-x: auto;
+                    }
+                    .agencement-btn{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 10px;
+                        .btn-file, .fastyle{
+                            display: flex;
+                            height: 40px;
+                            width: 40px;
+                            background: #414c6d;
+                            border-radius: 50%;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            cursor: pointer;
+                        }
+                        .btn-file{
+                            font-size: 3rem;
+                        }
+                        .fastyle{
+                            font-size: 1.2rem;
+                            order: 3;
+                        }
+                        .definition{
+                            font-size: 1.2rem;
+                        }
+                        #file{
+                            display: none;
+                        }
+                    }
+                    .all-file__preview{
+                        display: flex;
+                        width: 100%;
+                        flex-direction: row-reverse;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-bottom: solid 2.5px;
+                        margin-bottom: 10px;
+                        .picture-preview{
+                            display: flex;
+                            height: 40px;
+                            width: 40px;
+                            object-fit: cover;
+                        }
+                        .name-preview{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+                .obligation{
+                    text-align: end;
+                    margin: 3px 0;
+                }
+            }
+        }
+    }
+}
+input, textarea{
+    height: 40px;
+    font-size: 1.2rem;
+    box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
+}
+label{
+    font-size: 1.2rem;
+    color: #414c6d;
+}
+textarea{
+    min-height: 120px;
+    resize: none;
+    overflow-y: auto;
+}

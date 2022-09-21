@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Jost&family=Kodchasan:ital,wght@1,600&display=swap');
+.body{
+    overflow: hidden;
+}
 body{
     margin: 0px;
     padding: 0px;
     background: #F2F2F2;
-    overflow: hidden;
 }
 h2{
     font-family: 'Kodchasan', sans-serif;
-    color: #272D40;
+    color: #414c6d;
     font-size: 2.7rem;
 }
 #main{

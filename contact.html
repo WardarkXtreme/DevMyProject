@@ -17,20 +17,52 @@
             <h1 class="name-title-form">DevMyProject</h1>
             <p class="text-form"></p>
         </header>
-        <main id="main">
-            <form>
-                
+        <main class="main-form">
+            <form class="card-form">
+                <div class="goup-input">
+                    <label for="name">Nom complet ou raison sociale</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="goup-input">
+                    <label for="mail" >E-mail</label>
+                    <input type="text" id="mail" name="mail">
+                </div>
+                <div class="goup-input">
+                    <label for="number">Numéro</label>
+                    <input type="number" id="number" name="number">
+                </div>
+                <div class="goup-input">
+                    <label for="message">Message</label>
+                    <textarea class="textarea" name="message" id="message"></textarea>
+                    <p class="obligation">*Essayez d’être le plus explicite possible concernant votre projet.</p>
+                </div>
+                <div class="goup-input">
+                    <div class="style-input__file">
+                        <div class="preview-all__file"></div>
+                        <div class="agencement-btn">
+                            <p class="definition">Joindre un fichier</p>
+                            <i class="fa-solid fa-trash fastyle" id="delFile"></i>
+                            <label class="btn-file" for="file">+</label>
+                            <input type="file" name="file" id="file">
+                        </div>
+                    </div>
+                    <p class="obligation">*Formats autorisés : PDF,  JPEG, PNG, GIF, MP4.</p>
+                </div>
+                <div class="group-input">
+                    <button class="btn-send">Envoyer</button>
+                </div>
             </form>
         </main>
-        <footer>
+        <footer class="footer">
             <img class="logo-footer" src="./public/asset/logo.png" alt="logo - DevMyProject"/>
-            <p class="string-footer">DevMyProject</p>
-            <p class="string-footer">programmation informatique </p>
-            <p class="string-footer">Saint-Lô, Basse-Normandie, France</p>
-            <p class="string-footer">contact@devmyproject@gmail.com</p>
-            <p class="string-footer">0771086630</p>
-            <p class="string-footer">N° SIRET: 91460102600018</p>
+                <p class="string-footer">DevMyProject</p>
+                <p class="string-footer">programmation informatique </p>
+                <p class="string-footer">Saint-Lô, Basse-Normandie, France</p>
+                <p class="string-footer">contact@devmyproject@gmail.com</p>
+                <p class="string-footer">0771086630</p>
+                <p class="string-footer">N° SIRET: 91460102600018</p>
         </footer>
     </div>
+    <script src="./composant/pageForm.js"></script>
 </body>
 </html>
