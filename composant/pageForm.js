@@ -16,7 +16,7 @@ function displayFile(){
 
     addArrayFile.push(getFile.files[0]);
     let newArrayFile = [...new Set(addArrayFile)];
-    
+    console.log(newArrayFile)
     newArrayFile.map(files => {
         let container = document.querySelector('.preview-all__file');
         let containerAll = document.createElement('div');
@@ -26,6 +26,16 @@ function displayFile(){
         let pictureFilePreview = document.createElement('img');
         pictureFilePreview.setAttribute('class', 'picture-preview');
         pictureFilePreview.src = URL.createObjectURL(files);
+        switch(files.type){
+            case "application/pdf":
+                console.log("test pdf");
+                pictureFilePreview.src = '../public/asset/pdf.png'
+            break;
+            case "video/mp4":
+                console.log("test mp4");
+                pictureFilePreview.src = '../public/asset/mp4.png'
+            break;
+        }
         let nameFilePreview = document.createElement('p');
         nameFilePreview.setAttribute('class', 'name-preview');
         nameFilePreview.innerHTML = files.name;

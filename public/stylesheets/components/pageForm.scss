@@ -8,6 +8,7 @@
         display: flex;
         flex-direction: column;
         width: 50%;
+        height: 100%;
         max-height: 54rem;
         justify-content: center;
         align-items: center;
@@ -31,6 +32,7 @@
         align-items: center;
         width: 50%;
         height: 100%;
+        max-height: 54rem;
         .card-form{
             display: flex;
             flex-direction: column;
@@ -129,4 +131,72 @@ textarea{
     min-height: 120px;
     resize: none;
     overflow-y: auto;
+}
+.btn-send{
+    display: flex;
+    height: 40px;
+    width: 150px;
+    border-radius: 2em;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    color: white;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1300px) {
+    .contain-page_form{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        .group-header__form{
+            .logo-header{
+                width: 17rem;
+                margin-top: 30px;
+            }
+            .name-title-form{
+                font-size: 3rem;
+            }
+            .text-form{
+                font-size: 1.9rem;
+            }
+        }
+        .main-form{
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .contain-page_form{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        .group-header__form{
+            width: 100%;
+            .logo-header{
+                width: 17rem;
+                margin-top: 30px;
+            }
+            .name-title-form{
+                font-size: 2.5rem;
+            }
+            .text-form{
+                font-size: 1.3rem;
+            }
+        }
+        .main-form{
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+            .card-form{
+                width: 100%;
+                border-radius: 0;
+            }
+        }
+    }
+    .obligation{
+        font-size: 10px;
+    }
 }
