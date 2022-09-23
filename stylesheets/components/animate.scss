@@ -32,13 +32,8 @@
     transform: scale(1.1, 0.9);
   }
 
-  96% {
-    top: -5vh;
-    transform: scale(1, 1);
-  }
-
   100% {
-    top: 0;
+    top: -15vh;
     transform: scale(1, 1);
   }
 }
