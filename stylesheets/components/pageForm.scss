@@ -46,13 +46,11 @@
                         -14px -14px 28px #ffffff;
             border: none;
             border-radius: 3rem;
-            .goup-input{
+            .group-input{
                 display: flex;
                 flex-direction: column;
                 width: 80%;
                 margin: 15px 0;
-                box-shadow: inset 5px 5px 10px #747474,
-                inset -5px -5px 10px #ffffff;
                 .style-input__file{
                     display: flex;
                     flex-direction: column;
@@ -71,6 +69,7 @@
                         justify-content: space-between;
                         align-items: center;
                         padding: 0 10px;
+                        margin: 30px 0;
                         .btn-file, .fastyle{
                             display: flex;
                             height: 40px;
@@ -128,13 +127,14 @@
 input, textarea{
     height: 40px;
     font-size: 1.2rem;
-    background: #d6d6d6;
+    background: transparent;
     border: none;
     border-radius: 10px;
 }
 .input{
     box-shadow: inset 5px 5px 10px #747474,
             inset -5px -5px 10px #ffffff;
+    border-radius: 10px;
 }
 label{
     font-size: 1.2rem;
@@ -159,6 +159,7 @@ textarea{
                  -5px -5px 14px #ffffff;
     color: darkgoldenrod;
     font-size: 1.3rem;
+    margin: 30px 0;
     cursor: pointer;
 }
 @media screen and (max-width: 1300px) {

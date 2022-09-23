@@ -423,14 +423,13 @@ footer .string-footer {
   border: none;
   border-radius: 3rem;
 }
-.contain-page_form .main-form .card-form .goup-input {
+.contain-page_form .main-form .card-form .group-input {
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: 15px 0;
-  box-shadow: inset 5px 5px 10px #747474, inset -5px -5px 10px #ffffff;
 }
-.contain-page_form .main-form .card-form .goup-input .style-input__file {
+.contain-page_form .main-form .card-form .group-input .style-input__file {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -440,17 +439,18 @@ footer .string-footer {
   box-shadow: inset 14px 14px 28px #9a9a9a, inset -14px -14px 28px #ffffff;
   border-radius: 10px;
 }
-.contain-page_form .main-form .card-form .goup-input .style-input__file .preview-all__file {
+.contain-page_form .main-form .card-form .group-input .style-input__file .preview-all__file {
   max-height: 169px;
   overflow-x: auto;
 }
-.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn {
+.contain-page_form .main-form .card-form .group-input .style-input__file .agencement-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  margin: 30px 0;
 }
-.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn .btn-file, .contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn .fastyle {
+.contain-page_form .main-form .card-form .group-input .style-input__file .agencement-btn .btn-file, .contain-page_form .main-form .card-form .group-input .style-input__file .agencement-btn .fastyle {
   display: flex;
   height: 40px;
   width: 40px;
@@ -462,20 +462,20 @@ footer .string-footer {
   box-shadow: 5px 5px 14px #858585, -5px -5px 14px #ffffff;
   color: darkgoldenrod;
 }
-.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn .btn-file {
+.contain-page_form .main-form .card-form .group-input .style-input__file .agencement-btn .btn-file {
   font-size: 3rem;
 }
-.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn .fastyle {
+.contain-page_form .main-form .card-form .group-input .style-input__file .agencement-btn .fastyle {
   font-size: 1.2rem;
   order: 3;
 }
-.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn .definition {
+.contain-page_form .main-form .card-form .group-input .style-input__file .agencement-btn .definition {
   font-size: 1.2rem;
 }
-.contain-page_form .main-form .card-form .goup-input .style-input__file .agencement-btn #file {
+.contain-page_form .main-form .card-form .group-input .style-input__file .agencement-btn #file {
   display: none;
 }
-.contain-page_form .main-form .card-form .goup-input .style-input__file .all-file__preview {
+.contain-page_form .main-form .card-form .group-input .style-input__file .all-file__preview {
   display: flex;
   width: 100%;
   flex-direction: row-reverse;
@@ -484,16 +484,16 @@ footer .string-footer {
   border-bottom: solid 2.5px darkgoldenrod;
   margin-bottom: 10px;
 }
-.contain-page_form .main-form .card-form .goup-input .style-input__file .all-file__preview .picture-preview {
+.contain-page_form .main-form .card-form .group-input .style-input__file .all-file__preview .picture-preview {
   display: flex;
   height: 40px;
   width: 40px;
   object-fit: cover;
 }
-.contain-page_form .main-form .card-form .goup-input .style-input__file .all-file__preview .name-preview {
+.contain-page_form .main-form .card-form .group-input .style-input__file .all-file__preview .name-preview {
   font-size: 1.3rem;
 }
-.contain-page_form .main-form .card-form .goup-input .obligation {
+.contain-page_form .main-form .card-form .group-input .obligation {
   text-align: end;
   margin: 3px 0;
 }
@@ -501,13 +501,14 @@ footer .string-footer {
 input, textarea {
   height: 40px;
   font-size: 1.2rem;
-  background: #d6d6d6;
+  background: transparent;
   border: none;
   border-radius: 10px;
 }
 
 .input {
   box-shadow: inset 5px 5px 10px #747474, inset -5px -5px 10px #ffffff;
+  border-radius: 10px;
 }
 
 label {
@@ -534,6 +535,7 @@ textarea {
   box-shadow: 5px 5px 14px #858585, -5px -5px 14px #ffffff;
   color: darkgoldenrod;
   font-size: 1.3rem;
+  margin: 30px 0;
   cursor: pointer;
 }
 
