@@ -501,6 +501,7 @@ footer .string-footer {
 input, textarea {
   height: 40px;
   font-size: 1.2rem;
+  width: 100%;
   background: transparent;
   border: none;
   border-radius: 10px;

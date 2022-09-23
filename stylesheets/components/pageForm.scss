@@ -127,10 +127,12 @@
 input, textarea{
     height: 40px;
     font-size: 1.2rem;
+    width: 100%;
     background: transparent;
     border: none;
     border-radius: 10px;
 }
+
 .input{
     box-shadow: inset 5px 5px 10px #747474,
             inset -5px -5px 10px #ffffff;
