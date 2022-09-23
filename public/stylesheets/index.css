@@ -6,12 +6,12 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: #F2F2F2;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
 }
 
 h2 {
   font-family: "Kodchasan", sans-serif;
-  color: #414c6d;
+  color: #404040;
   font-size: 2.7rem;
 }
 
@@ -182,7 +182,7 @@ h2 {
   font-family: "Abhaya Libre", serif;
   font-size: 4rem;
   margin: 40px 0;
-  color: #414c6d;
+  color: #404040;
   margin-bottom: 0px;
 }
 .group-header .text-head {
@@ -192,7 +192,7 @@ h2 {
   text-align: center;
   margin: 0px;
   margin-bottom: 30px;
-  color: black;
+  color: #8C8C8C;
 }
 
 @media screen and (max-width: 1300px) {
@@ -234,11 +234,10 @@ h2 {
   min-width: 300px;
   border-radius: 2em;
   margin-bottom: 60px;
-  background: #BFAF8F;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.59);
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 7px 7px 29px #afafaf, -7px -7px 29px #ffffff;
   backdrop-filter: contrast(0.5);
   -webkit-backdrop-filter: contrast(0.5);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 0;
 }
 .group-service .card-service .service {
@@ -247,7 +246,7 @@ h2 {
   padding: 1rem;
   margin: 0;
   overflow: hidden;
-  color: #414c6d;
+  color: darkgoldenrod;
 }
 .group-service .card-service .string-description {
   font-family: "Jost", sans-serif;
@@ -266,16 +265,17 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 18rem;
-  height: 3rem;
-  background: #272D40;
-  color: #F2F2F2;
-  font-size: 2rem;
+  height: 2rem;
+  background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
+  box-shadow: 5px 5px 14px #858585, -5px -5px 14px #ffffff;
+  color: darkgoldenrod;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 180px;
   border-radius: 2em;
   padding: 10px;
   z-index: 100;
   cursor: pointer;
-  box-shadow: 3px 5px 5px 1px rgba(0, 0, 0, 0.8);
 }
 .group-service .card-service .container-btn .btn:hover {
   box-shadow: 4px 6px 6px 1px rgba(0, 0, 0, 0.5);
@@ -292,12 +292,12 @@ h2 {
   font-size: 2.2rem;
   text-align: center;
   margin: 0px;
-  color: black;
+  color: #8C8C8C;
 }
 
 .service::before {
   content: "";
-  border-bottom: #414c6d solid;
+  border-bottom: #404040 solid;
   position: absolute;
   top: 4rem;
   width: 5%;
@@ -331,7 +331,6 @@ h2 {
   }
   .group-service .card-service .service {
     font-size: 1.2rem;
-    color: white;
   }
   .group-service .card-service .string-description {
     font-size: 1.1rem;
