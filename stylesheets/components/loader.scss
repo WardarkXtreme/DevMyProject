@@ -1,5 +1,5 @@
 .container-group__loader {
-    background: #021118;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
     @include column-center-center;
     position: fixed;
     height: 100vh;
@@ -58,7 +58,7 @@
         animation: deconstructed2 2s linear forwards;
     }
     .deconstructed{
-        color: white;
+        color: darkgoldenrod;
         font-size: 1.5rem;
         font-weight: bold;
         margin-top: 20px;
