@@ -18,12 +18,13 @@
         }
         .name-title-form{
             font-size: 4rem;
-            color: #414c6d;
+            color: #404040;
             margin-bottom: 0;
         }
         .text-form{
             font-size: 2.5rem;
             margin-top: 0;
+            color: #8C8C8C;
         }
     }
     .main-form{
@@ -40,8 +41,9 @@
             align-items: center;
             width: 85%;
             height: fit-content;
-            background: #BFAF8F;
-            box-shadow: 0 8px 32px 0 rgb(0 0 0 / 59%);
+            background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
+            box-shadow:  14px 14px 28px #9a9a9a,
+                        -14px -14px 28px #ffffff;
             border: none;
             border-radius: 3rem;
             .goup-input{
@@ -55,8 +57,9 @@
                     flex-wrap: wrap;
                     width: 100%;
                     height: auto;
-                    background: white;
-                    box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
+                    background: #d6d6d6;
+                    box-shadow: inset 14px 14px 28px #9a9a9a, inset -14px -14px 28px #ffffff;
+                    border-radius: 10px;
                     .preview-all__file{
                         max-height: 169px;
                         overflow-x: auto;
@@ -70,12 +73,14 @@
                             display: flex;
                             height: 40px;
                             width: 40px;
-                            background: #414c6d;
                             border-radius: 50%;
                             justify-content: center;
                             align-items: center;
-                            color: white;
                             cursor: pointer;
+                            background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
+                            box-shadow:  5px 5px 14px #858585,
+                            -5px -5px 14px #ffffff;
+                            color: darkgoldenrod;
                         }
                         .btn-file{
                             font-size: 3rem;
@@ -97,7 +102,7 @@
                         flex-direction: row-reverse;
                         justify-content: space-between;
                         align-items: center;
-                        border-bottom: solid 2.5px;
+                        border-bottom: solid 2.5px darkgoldenrod;
                         margin-bottom: 10px;
                         .picture-preview{
                             display: flex;
@@ -121,11 +126,14 @@
 input, textarea{
     height: 40px;
     font-size: 1.2rem;
-    box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.25);
+    background: #d6d6d6;
+    box-shadow: inset 14px 14px 28px #9a9a9a, inset -14px -14px 28px #ffffff;
+    border: none;
+    border-radius: 10px;
 }
 label{
     font-size: 1.2rem;
-    color: #414c6d;
+    color: #404040;
 }
 textarea{
     min-height: 120px;
@@ -140,9 +148,13 @@ textarea{
     border: none;
     justify-content: center;
     align-items: center;
-    background: #414c6d;
-    color: white;
     margin-bottom: 20px;
+    background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
+    box-shadow:  5px 5px 14px #858585,
+                 -5px -5px 14px #ffffff;
+    color: darkgoldenrod;
+    font-size: 1.3rem;
+    cursor: pointer;
 }
 @media screen and (max-width: 1300px) {
     .contain-page_form{
