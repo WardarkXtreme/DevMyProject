@@ -428,6 +428,7 @@ footer .string-footer {
   flex-direction: column;
   width: 80%;
   margin: 15px 0;
+  box-shadow: inset 5px 5px 10px #747474, inset -5px -5px 10px #ffffff;
 }
 .contain-page_form .main-form .card-form .goup-input .style-input__file {
   display: flex;
