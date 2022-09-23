@@ -508,6 +508,8 @@ input, textarea {
 }
 
 .input {
+  display: flex;
+  width: 100%;
   box-shadow: inset 5px 5px 10px #747474, inset -5px -5px 10px #ffffff;
   border-radius: 10px;
 }
