@@ -57,3 +57,11 @@
     transform: translateX(0%);
   }
 }
+@keyframes widthUp{
+  from{
+    width: 3px;
+  }
+  to{
+    width: 100%;
+  }
+}

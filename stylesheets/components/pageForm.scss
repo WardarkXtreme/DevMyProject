@@ -135,10 +135,11 @@ input, textarea{
 
 .input{
     display: flex;
-    width: 100%;
+    animation: widthUp 1s ease-in-out forwards;
     box-shadow: inset 5px 5px 10px #747474,
             inset -5px -5px 10px #ffffff;
     border-radius: 10px;
+    transition: width 1s ease-in-out;
 }
 label{
     font-size: 1.2rem;
