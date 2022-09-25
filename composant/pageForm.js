@@ -30,11 +30,11 @@ function displayFile(){
         switch(files.type){
             case "application/pdf":
                 console.log("test pdf");
-                pictureFilePreview.src = 'pdf.png'
+                pictureFilePreview.src = './stylesheets/asset/pdf.png'
             break;
             case "video/mp4":
                 console.log("test mp4");
-                pictureFilePreview.src = 'mp4.png'
+                pictureFilePreview.src = './stylesheets/asset/mp4.png'
             break;
         }
         let nameFilePreview = document.createElement('p');
