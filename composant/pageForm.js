@@ -1,8 +1,10 @@
-const getString = window.sessionStorage.getItem("service")
-const setString = document.querySelector('.text-form').innerHTML = `Vous avez choisie "${getString}"`
-const getFile = document.getElementById('file')
-const btnDel = document.getElementById('delFile')
-let addArrayFile=[]
+const getString = window.sessionStorage.getItem("service");
+const setString = document.querySelector('.text-form').innerHTML = `Vous avez choisie "${getString}"`;
+const getFile = document.getElementById('file');
+const btnDel = document.getElementById('delFile');
+const imgPdf = "../stylesheets/asset/pdf.png";
+const imgMp4 = "../stylesheets/asset/mp4.png";
+let addArrayFile=[];
 
 
 function displayFile(){
@@ -29,11 +31,11 @@ function displayFile(){
         switch(files.type){
             case "application/pdf":
                 console.log("test pdf");
-                pictureFilePreview.src = '../public/asset/pdf.png'
+                pictureFilePreview.src = URL.createObjectURL(imgPdf);
             break;
             case "video/mp4":
                 console.log("test mp4");
-                pictureFilePreview.src = '../public/asset/mp4.png'
+                pictureFilePreview.src = URL.createObjectURL(imgMp4);
             break;
         }
         let nameFilePreview = document.createElement('p');
