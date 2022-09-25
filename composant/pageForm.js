@@ -68,3 +68,24 @@ getFile.addEventListener('change', () => {
 btnDel.addEventListener('click', () => {
     delFile()
 })
+document.querySelector('.btn-send').addEventListener('click', (e)=>{
+    e.preventDefault();
+    let verify = document.querySelectorAll('.group-input');
+
+    if(verify != null){
+        const del = document.querySelectorAll('.group-input')
+        let btn = document.querySelector('.btn-input');
+        del.forEach(div => {
+            div.remove()
+        });
+        btn.remove()
+    };
+    const container = document.querySelector(".card-form");
+    const ball = document.createElement('div');
+    ball.setAttribute('class', 'ball');
+    const validIcon = document.createElement('i');
+    validIcon.setAttribute('class', 'fa-solid fa-check valid-ico')
+    
+    ball.appendChild(validIcon);
+    container.appendChild(ball);
+})

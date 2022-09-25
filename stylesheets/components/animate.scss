@@ -65,3 +65,14 @@
     width: 100%;
   }
 }
+@keyframes icoBall {
+  0%{
+    transform: scale(0.2);
+  }
+  70%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

@@ -169,6 +169,17 @@ h2 {
     width: 100%;
   }
 }
+@keyframes icoBall {
+  0% {
+    transform: scale(0.2);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .group-header {
   display: flex;
   width: 100%;
@@ -499,6 +510,27 @@ footer .string-footer {
 .contain-page_form .main-form .card-form .group-input .obligation {
   text-align: end;
   margin: 3px 0;
+}
+.contain-page_form .main-form .card-form .ball {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 40px 0;
+  background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
+  box-shadow: inset 5px 5px 10px #747474, inset -5px -5px 10px #ffffff;
+}
+.contain-page_form .main-form .card-form .ball .valid-ico {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 15rem;
+  color: darkgoldenrod;
+  text-shadow: 0 1px 0 hsl(174deg, 5%, 80%), 0 2px 0 hsl(174deg, 5%, 75%), 0 3px 0 hsl(174deg, 5%, 70%), 0 4px 0 hsl(174deg, 5%, 66%), 0 5px 0 hsl(174deg, 5%, 64%), 0 6px 0 hsl(174deg, 5%, 62%), 0 7px 0 hsl(174deg, 5%, 61%), 0 8px 0 hsl(174deg, 5%, 60%), 0 0 5px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.3);
+  animation: icoBall 1.5s ease-in-out forwards;
+  transition: transform 1s ease-in-out;
 }
 
 input, textarea {
