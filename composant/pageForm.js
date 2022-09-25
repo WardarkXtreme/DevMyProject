@@ -26,7 +26,6 @@ function displayFile(){
         containerAllFilePreview.setAttribute('class', 'all-file__preview');
         let pictureFilePreview = document.createElement('img');
         pictureFilePreview.setAttribute('class', 'picture-preview');
-        pictureFilePreview.src = URL.createObjectURL(files);
         switch(files.type){
             case "application/pdf":
                 console.log("test pdf");
@@ -35,6 +34,9 @@ function displayFile(){
             case "video/mp4":
                 console.log("test mp4");
                 pictureFilePreview.src = './stylesheets/asset/mp4.png'
+            break;
+            default: 
+                pictureFilePreview.src = URL.createObjectURL(files);
             break;
         }
         let nameFilePreview = document.createElement('p');
