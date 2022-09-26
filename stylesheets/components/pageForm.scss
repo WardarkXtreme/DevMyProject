@@ -136,7 +136,7 @@
                     justify-content: center;
                     align-items: center;
                     font-size: 15rem;
-                    color: darkgoldenrod;
+                    color: #46a23e;
                     text-shadow:     0 1px 0 hsl(174,5%,80%),
                     0 2px 0 hsl(174,5%,75%),
                     0 3px 0 hsl(174,5%,70%),
@@ -151,8 +151,8 @@
                     0 5px 10px rgba(0,0,0,.2),
                     0 10px 10px rgba(0,0,0,.2),
                     0 20px 20px rgba(0,0,0,.3);
-                    animation: icoBall 1.5s ease-in-out forwards;
-                    transition: transform 1s ease-in-out;
+                    animation: icoBall 0.5s ease-in-out forwards;
+                    transition: transform 0.5s ease-in-out;
                 }
             }
         }

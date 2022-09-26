@@ -85,7 +85,10 @@ document.querySelector('.btn-send').addEventListener('click', (e)=>{
     ball.setAttribute('class', 'ball');
     const validIcon = document.createElement('i');
     validIcon.setAttribute('class', 'fa-solid fa-check valid-ico')
+    const info = document.createElement('h2');
+    info.innerHTML = "Félicitations !"
     
     ball.appendChild(validIcon);
     container.appendChild(ball);
+    container.appendChild(info);
 })
