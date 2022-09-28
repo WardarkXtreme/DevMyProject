@@ -18,24 +18,27 @@
             <p class="text-form"></p>
         </header>
         <main class="main-form">
-            <form class="card-form">
+            <form class="card-form" id="form">
                 <div class="group-input">
                     <label for="name">Nom complet ou raison sociale</label>
                     <div class="input">
                         <input type="text" id="name" name="name">
                     </div>
+                    <p class="obligation__name"></p>
                 </div>
                 <div class="group-input">
                     <label for="mail" >E-mail</label>
                     <div class="input">
                         <input type="text" id="mail" name="mail">
                     </div>
+                    <p class="obligation__mail"></p>
                 </div>
                 <div class="group-input">
                     <label for="number">Numéro</label>
                     <div class="input">
                         <input type="number" id="number" name="number">
                     </div>
+                    <p class="obligation__number"></p>
                 </div>
                 <div class="group-input">
                     <label for="message">Message</label>
@@ -43,21 +46,10 @@
                         <textarea  name="message" id="message"></textarea>
                     </div>
                     <p class="obligation">*Essayez d’être le plus explicite possible concernant votre projet.</p>
-                </div>
-                <div class="group-input">
-                    <div class="style-input__file">
-                        <div class="preview-all__file"></div>
-                        <div class="agencement-btn">
-                            <p class="definition">Joindre un fichier</p>
-                            <i class="fa-solid fa-trash fastyle" id="delFile"></i>
-                            <label class="btn-file" for="file">+</label>
-                            <input type="file" name="file" id="file" accept="image/jpg,image/png,video/mp4,image/gif,application/pdf" >
-                        </div>
-                    </div>
-                    <p class="obligation">*Formats autorisés : PDF,  JPEG, PNG, GIF, MP4.</p>
+                    <p class="obligation__message"></p>
                 </div>
                 <div class="btn-input">
-                    <button class="btn-send">Envoyer</button>
+                    <button type="submit" class="btn-send">Envoyer</button>
                 </div>
             </form>
         </main>

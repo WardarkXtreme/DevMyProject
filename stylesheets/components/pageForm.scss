@@ -51,74 +51,14 @@
                 flex-direction: column;
                 width: 80%;
                 margin: 15px 0;
-                .style-input__file{
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    height: auto;
-                    background: #d6d6d6;
-                    box-shadow: inset 14px 14px 28px #9a9a9a, inset -14px -14px 28px #ffffff;
-                    border-radius: 10px;
-                    .preview-all__file{
-                        max-height: 169px;
-                        overflow-x: auto;
-                    }
-                    .agencement-btn{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 0 10px;
-                        margin: 30px 0;
-                        .btn-file, .fastyle{
-                            display: flex;
-                            height: 40px;
-                            width: 40px;
-                            border-radius: 50%;
-                            justify-content: center;
-                            align-items: center;
-                            cursor: pointer;
-                            background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
-                            box-shadow:  5px 5px 14px #858585,
-                            -5px -5px 14px #ffffff;
-                            color: darkgoldenrod;
-                        }
-                        .btn-file{
-                            font-size: 3rem;
-                        }
-                        .fastyle{
-                            font-size: 1.2rem;
-                            order: 3;
-                        }
-                        .definition{
-                            font-size: 1.2rem;
-                        }
-                        #file{
-                            display: none;
-                        }
-                    }
-                    .all-file__preview{
-                        display: flex;
-                        width: 100%;
-                        flex-direction: row-reverse;
-                        justify-content: space-between;
-                        align-items: center;
-                        border-bottom: solid 2.5px darkgoldenrod;
-                        margin-bottom: 10px;
-                        .picture-preview{
-                            display: flex;
-                            height: 40px;
-                            width: 40px;
-                            object-fit: cover;
-                        }
-                        .name-preview{
-                            font-size: 1.3rem;
-                        }
-                    }
-                }
                 .obligation{
                     text-align: end;
                     margin: 3px 0;
+                }
+                .obligation__name, .obligation__mail, .obligation__number{
+                    margin: 0;
+                    color: #a23e3e;
+                    text-align: end;
                 }
             }
             .ball{
@@ -154,6 +94,38 @@
                     animation: icoBall 0.5s ease-in-out forwards;
                     transition: transform 0.5s ease-in-out;
                 }
+                .noValid-ico{
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 15rem;
+                    color: #a23e3e;
+                    text-shadow:     0 1px 0 hsl(174,5%,80%),
+                    0 2px 0 hsl(174,5%,75%),
+                    0 3px 0 hsl(174,5%,70%),
+                    0 4px 0 hsl(174,5%,66%),
+                    0 5px 0 hsl(174,5%,64%),
+                    0 6px 0 hsl(174,5%,62%),
+                    0 7px 0 hsl(174,5%,61%),
+                    0 8px 0 hsl(174,5%,60%),
+                    0 0 5px rgba(0,0,0,.05),
+                    0 1px 3px rgba(0,0,0,.2),
+                    0 3px 5px rgba(0,0,0,.2),
+                    0 5px 10px rgba(0,0,0,.2),
+                    0 10px 10px rgba(0,0,0,.2),
+                    0 20px 20px rgba(0,0,0,.3);
+                    animation: icoBall 0.5s ease-in-out forwards;
+                    transition: transform 0.5s ease-in-out;
+                }
+            }
+            h2{
+                margin: 0;
+            }
+            p{
+                margin-bottom: 50px;
+                font-size: 1.2em;
             }
         }
     }
@@ -200,6 +172,19 @@ textarea{
     font-size: 1.3rem;
     margin: 30px 0;
     cursor: pointer;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
+}
+input::-o-inner-spin-button,
+input::-o-outer-spin-button { 
+	-o-appearance: none;
+	margin:0
 }
 @media screen and (max-width: 1300px) {
     .contain-page_form{
