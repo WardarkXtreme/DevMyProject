@@ -56,7 +56,7 @@ verifyNumber.addEventListener('input', (e)=> {
     }
     if(e.target.value.length != 10){
         
-        annonce.innerHTML = `${e.target.value.length}/10 caractères minimums autorisés`
+        annonce.innerHTML = `${e.target.value.length}/10 caractères numériques autorisés`
     }
 })
 
