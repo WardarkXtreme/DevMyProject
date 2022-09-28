@@ -5,7 +5,7 @@ const setString = document.querySelector('.text-form').innerHTML = `Vous avez ch
 const verifyName = document.querySelector('#name');
 const regexName = /^(([a-zA-Z0-9._\s-']{3,25}))$/;
 const verifyMail = document.querySelector('#mail');
-const regexMail = /^(([a-z0-9._-]+@[a-z0-9.]+[.][a-z]{2,6}))$/;
+const regexMail = /^(([a-zA-Z0-9._-]+@[a-z0-9.]+[.][a-z]{2,6}))$/;
 const verifyNumber = document.querySelector('#number');
 const regexNumber = /^(([0-9]{10}))$/;
 
