@@ -140,10 +140,17 @@ document.getElementById('send').addEventListener('click', (e)=>{
                 info.innerHTML = "Félicitations !"
                 const infoTwo = document.createElement('p');
                 infoTwo.innerHTML = "Nous vous répondrons dans les meilleurs délais"
+                const infoThree = document.createElement('p');
+                infoThree.innerHTML = "veuillez attendre la redirection..."
                 ball.appendChild(validIcon);
                 container.appendChild(ball);
                 container.appendChild(info);
                 container.appendChild(infoTwo);
+                container.appendChild(infoThree);
+                container.scrollIntoView();
+                setTimeout(()=>{
+                    window.location.href="/"
+                },4500);
             })
             .catch((err) => {
                 console.log(err)
@@ -165,11 +172,18 @@ document.getElementById('send').addEventListener('click', (e)=>{
                 const info = document.createElement('h2');
                 info.innerHTML = "Oups !"
                 const infoTwo = document.createElement('p');
-                infoTwo.innerHTML = "Une erreur est survenue, veuillez attendre la redirection..."
+                infoTwo.innerHTML = "Une erreur est survenue"
+                const infoThree = document.createElement('p');
+                infoThree.innerHTML = "veuillez attendre la redirection..."
                 ball.appendChild(validIcon);
                 container.appendChild(ball);
                 container.appendChild(info);
                 container.appendChild(infoTwo);
+                container.appendChild(infoThree);
+                container.scrollIntoView();
+                setTimeout(()=>{
+                    window.location.href="/"
+                },4500);
             })
         }
         
