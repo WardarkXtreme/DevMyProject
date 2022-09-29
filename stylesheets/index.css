@@ -292,7 +292,6 @@ h2 {
   cursor: pointer;
 }
 .group-service .card-service .container-btn .btn:hover {
-  box-shadow: 4px 6px 6px 1px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
 }
 .group-service .card-service .container-btn .btn:active {
@@ -322,7 +321,7 @@ h2 {
 
 @media screen and (max-width: 1300px) {
   .group-service .card-service {
-    width: 100%;
+    width: 95%;
   }
   .group-service .card-service .service {
     font-size: 1.5rem;
@@ -445,12 +444,14 @@ footer .string-footer {
 }
 .contain-page_form .main-form .card-form .group-input .obligation {
   text-align: end;
+  font-size: 1rem;
   margin: 3px 0;
 }
-.contain-page_form .main-form .card-form .group-input .obligation__name, .contain-page_form .main-form .card-form .group-input .obligation__mail, .contain-page_form .main-form .card-form .group-input .obligation__number {
+.contain-page_form .main-form .card-form .group-input .obligation__name, .contain-page_form .main-form .card-form .group-input .obligation__mail, .contain-page_form .main-form .card-form .group-input .obligation__number, .contain-page_form .main-form .card-form .group-input .obligation__message {
   margin: 0;
   color: #a23e3e;
   text-align: end;
+  font-size: 1rem;
 }
 .contain-page_form .main-form .card-form .ball {
   display: flex;
@@ -536,6 +537,25 @@ textarea {
   font-size: 1.3rem;
   margin: 30px 0;
   cursor: pointer;
+  transition: box-shadow 2s ease-in-out, color 2s ease-in-out;
+}
+
+.btn-nosend {
+  display: flex;
+  height: 40px;
+  width: 150px;
+  border-radius: 2em;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
+  box-shadow: none;
+  color: darkgrey;
+  font-size: 1.3rem;
+  margin: 30px 0;
+  cursor: no-drop;
+  transition: box-shadow 2s ease-in-out, color 2s ease-in-out;
 }
 
 input[type=number] {

@@ -53,12 +53,14 @@
                 margin: 15px 0;
                 .obligation{
                     text-align: end;
+                    font-size: 1rem;
                     margin: 3px 0;
                 }
-                .obligation__name, .obligation__mail, .obligation__number{
+                .obligation__name, .obligation__mail, .obligation__number, .obligation__message{
                     margin: 0;
                     color: #a23e3e;
                     text-align: end;
+                    font-size: 1rem;
                 }
             }
             .ball{
@@ -172,6 +174,24 @@ textarea{
     font-size: 1.3rem;
     margin: 30px 0;
     cursor: pointer;
+    transition: box-shadow 2s ease-in-out, color 2s ease-in-out;
+}
+.btn-nosend{
+    display: flex;
+    height: 40px;
+    width: 150px;
+    border-radius: 2em;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background: linear-gradient(145deg, #e5e5e5, #c1c1c1);
+    box-shadow:  none;
+    color: darkgrey;
+    font-size: 1.3rem;
+    margin: 30px 0;
+    cursor:no-drop;
+    transition: box-shadow 2s ease-in-out, color 2s ease-in-out;
 }
 input[type=number] {
     -moz-appearance: textfield;

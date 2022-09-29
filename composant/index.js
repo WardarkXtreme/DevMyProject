@@ -12,5 +12,6 @@ btn.forEach(btn => {
         document.location.href = 'contact.html';
     })
 });
-
+console.warn("⛔️⚠️Cette console n'est pas faite pour les utilisateurs non-avertis, prudence.👀")
+console.warn("😈 je vous vois 😈")
 setTimeout(changeClass, 5500);
