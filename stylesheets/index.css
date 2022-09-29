@@ -12,7 +12,7 @@ body {
 h2 {
   font-family: "Kodchasan", sans-serif;
   color: #404040;
-  font-size: 2.7rem;
+  font-size: 1.7rem;
 }
 
 #main {
@@ -189,8 +189,8 @@ h2 {
 }
 .group-header .logo-header {
   display: flex;
-  width: 20rem;
-  margin-top: 60px;
+  width: 17rem;
+  margin-top: 50px;
 }
 .group-header .name-title-header {
   font-family: "Abhaya Libre", serif;
@@ -202,7 +202,7 @@ h2 {
 .group-header .text-head {
   display: flex;
   max-width: 1300px;
-  font-size: 2.2rem;
+  font-size: 1.3rem;
   text-align: center;
   margin: 0px;
   margin-bottom: 30px;
@@ -256,7 +256,7 @@ h2 {
 }
 .group-service .card-service .service {
   font-family: "Jost", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
   margin: 0;
   overflow: hidden;
@@ -264,7 +264,7 @@ h2 {
 }
 .group-service .card-service .string-description {
   font-family: "Jost", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   text-align: justify;
   padding: 0 1rem;
   margin: 0;
@@ -302,7 +302,7 @@ h2 {
 .text {
   display: flex;
   max-width: 1300px;
-  font-size: 2.2rem;
+  font-size: 1.3rem;
   text-align: center;
   margin: 0px;
   color: #8C8C8C;
@@ -312,7 +312,7 @@ h2 {
   content: "";
   border-bottom: #404040 solid;
   position: absolute;
-  top: 4rem;
+  top: 3rem;
   width: 5%;
   height: 2px;
   transform: scaleY(1.5);
@@ -581,14 +581,14 @@ input::-o-outer-spin-button {
     align-items: center;
   }
   .contain-page_form .group-header__form .logo-header {
-    width: 17rem;
+    width: 15rem;
     margin-top: 30px;
   }
   .contain-page_form .group-header__form .name-title-form {
     font-size: 3rem;
   }
   .contain-page_form .group-header__form .text-form {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
   .contain-page_form .main-form {
     width: 100%;
@@ -606,11 +606,11 @@ input::-o-outer-spin-button {
     width: 100%;
   }
   .contain-page_form .group-header__form .logo-header {
-    width: 17rem;
+    width: 12rem;
     margin-top: 30px;
   }
   .contain-page_form .group-header__form .name-title-form {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .contain-page_form .group-header__form .text-form {
     font-size: 1.3rem;
@@ -625,7 +625,7 @@ input::-o-outer-spin-button {
     border-radius: 0;
   }
   .obligation {
-    font-size: 10px;
+    font-size: 1rem;
   }
 }
 

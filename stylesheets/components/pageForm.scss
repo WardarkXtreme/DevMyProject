@@ -213,14 +213,14 @@ input::-o-outer-spin-button {
         align-items: center;
         .group-header__form{
             .logo-header{
-                width: 17rem;
+                width: 15rem;
                 margin-top: 30px;
             }
             .name-title-form{
                 font-size: 3rem;
             }
             .text-form{
-                font-size: 1.9rem;
+                font-size: 1.5rem;
             }
         }
         .main-form{
@@ -238,11 +238,11 @@ input::-o-outer-spin-button {
         .group-header__form{
             width: 100%;
             .logo-header{
-                width: 17rem;
+                width: 12rem;
                 margin-top: 30px;
             }
             .name-title-form{
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             .text-form{
                 font-size: 1.3rem;
@@ -259,6 +259,6 @@ input::-o-outer-spin-button {
         }
     }
     .obligation{
-        font-size: 10px;
+        font-size: 1rem;
     }
 }

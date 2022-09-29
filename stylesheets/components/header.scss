@@ -6,8 +6,8 @@
     height: auto;
     .logo-header{
         display: flex;
-        width: 20rem;
-        margin-top: 60px;
+        width: 17rem;
+        margin-top: 50px;
     }
     .name-title-header{
         @include fontOne;
@@ -17,7 +17,7 @@
     .text-head{
         display: flex;
         max-width: 1300px;
-        font-size: 2.2rem;
+        font-size: 1.3rem;
         text-align: center;
         margin: 0px;
         margin-bottom: 30px;

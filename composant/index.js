@@ -8,7 +8,25 @@ function changeClass(){
 const btn = document.querySelectorAll('.btn')
 btn.forEach(btn => {
     btn.addEventListener('click', (e)=>{
-        window.sessionStorage.setItem("service", `${e.target.id}`)
+        let nameService;
+        switch (e.target.id){
+            case "Sitevitrine": 
+                nameService = "site vitrine"
+                break;
+            case "SiteE-Commerce":
+                nameService = "Site E-Commerce"
+                break;
+            case "Applicationweb":
+                nameService = "Application web"
+                break;
+            case "SEO":
+                nameService = "SEO"
+                break;
+            case "Refontedesite":
+                nameService = "Refonte de site"
+            break; 
+        }
+        window.sessionStorage.setItem("service", `${nameService}`);
         document.location.href = 'contact.html';
     })
 });
