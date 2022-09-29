@@ -6,7 +6,7 @@ footer{
     align-items: center;
     flex-direction: column;
     margin-top: 60px;
-    padding-bottom: 20px;
+    padding: 40px 0;
     .logo-footer{
         display: flex;
         width: 10rem;
@@ -14,7 +14,8 @@ footer{
     }
     .string-footer{
         @include fontTwo;
-        font-size: 1.4em;
+        font-size: 1.3em;
+        text-decoration: none;
         color: white;
         margin: 0px;
     }
